@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: Poppins, serif;
+    background: linear-gradient(90deg, #9617c4 0%, #000000 87%);
+}
+
+
+p {
+    color: aquamarine;
+}
+
+a {
+    color: rgb(167, 140, 255);
+}
+
+.nav-link {
+    color:aquamarine
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(143, 151, 148);
+
+}
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: rgb(143, 151, 148); 
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #9617c4 0%, #000000 87%);
+}
+
+.card {
+    background: linear-gradient(270deg, #9617c4 0%, #000000 87%);
+    color: aquamarine;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(270deg, #9617c4 0%, #000000 87%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.call-anim{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.sup-txt {
+    color: rgb(167, 140, 255);
+    text-align: center;
+}
+
+.faq-list {
+    color: aquamarine;
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы, если нужно */
+    margin: 0; /* Убираем внешние отступы, если нужно */
+}
+
+.contact-form {
+    max-width: 600px; /* Максимальная ширина формы */
+    margin: 20px auto; /* Центрирование формы */
+    padding: 20px; /* Внутренние отступы */
+    border: none; /* Рамка */
+    border-radius: 9px; /* Закругленные углы */
+    background: transparent;
+}
+
+.contact-form .input-box, textarea {
+    display: block; /* Отображение меток как блочных элементов */
+    margin-bottom: 30px; /* Отступ снизу */
+    font-weight: bold; /* Полужирный текст */
+    border-radius: 18px;
+    background: transparent;
+}
+
+.input-box input,textarea {
+    width: 50%;
+    height: 100%;
+    background: transparent;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ширина на 100% */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid plum; /* Рамка */
+    border-radius: 18px; /* Закругленные углы */
+    font-size: 18px; /* Размер шрифта */
+    transition: border-color 0.3s; /* Плавный переход цвета рамки */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: purple; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+.contact-form button {
+    background-color: rgb(167, 140, 255); /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    padding: 10px 15px; /* Внутренние отступы */
+    border-radius: 4px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.contact-form button:hover {
+    background-color: #8000b3; /* Цвет кнопки при наведении */
+}
+
+.contact-form button:disabled {
+    background-color: rgb(167, 140, 255); /* Цвет кнопки при отключении */
+    cursor: not-allowed; /* Указатель при отключении */
+}
+
+.company-txt {
+    text-align: center;
+}
+
+h2, h3{
+    color: rgb(167, 140, 255);
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none
+    }
+}
